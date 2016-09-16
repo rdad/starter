@@ -6,7 +6,6 @@ module.exports = {
         publicPath: __dirname + '/dist',
         filename: 'app-bundle.js'   // file name
     },
-    watch: true,
     resolve: {
         extensions: ['', '.js', '.es6']
     },
@@ -17,6 +16,7 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'jshint-loader'
             }
-        ]
+        ],
+        loaders: []
     }
 }
