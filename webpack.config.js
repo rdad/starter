@@ -1,10 +1,10 @@
 
 module.exports = {
-  entry: './src/app.js',                 // entry point
-    output: {                       // output folder
-        path: './dist',             // folder path
+    entry: './src/app.js',           
+    output: {                     
+        path: './dist',            
         publicPath: __dirname + '/dist',
-        filename: 'app-bundle.js'   // file name
+        filename: 'app-bundle.js'  
     },
     resolve: {
         extensions: ['', '.js', '.es6']
@@ -17,6 +17,20 @@ module.exports = {
                 loader: 'jshint-loader'
             }
         ],
-        loaders: []
+        loaders: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                query: {
+                    presets: ['es2015',  'stage-0'] 
+                }
+            }
+        ]
+    },
+
+    jshint: {
+        esversion: 6,
+        failOnHint: false
     }
 }
