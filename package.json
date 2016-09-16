@@ -1,0 +1,27 @@
+{
+  "name": "swas",
+  "version": "1.0.0",
+  "description": "SWAS : Simple Web App Starter with Webpack",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdad/starter.git"
+  },
+  "author": "@rdad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdad/starter/issues"
+  },
+  "homepage": "https://github.com/rdad/starter#readme",
+  "devDependencies": {
+    "jshint": "^2.9.3",
+    "jshint-loader": "^0.8.3",
+    "node-libs-browser": "^1.0.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.2"
+  }
+}
